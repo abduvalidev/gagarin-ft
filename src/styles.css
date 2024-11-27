@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply bg-brand-gray font-onest text-black text-15 overflow-x-hidden
+  }
+}
+
+
+.responsive-image {
+  @apply  max-w-[21.875rem] w-full aspect-square
+}
+.drob-shadow {
+  box-shadow: 0px 2px 5px 0px #79799212;
+}
+.drob-shadow-2 {
+  box-shadow: 0px 40px 80px 0px #79799212;
+}
+
+.rounden-custom-1 {
+  border-radius: 200px 200px 10px 10px;
+}
+
+.rounden-custom-2 {
+  border-radius: 100px 10px 100px 100px;
+}
+
+.rounden-custom-3 {
+  border-radius: 10px 100px 100px 10px;
+}
+
+.rounden-custom {
+  border-radius: 100px 100px 100px 10px;
+}
+
+.text-gradient {
+  background: linear-gradient(270deg, #F76273 0%, #C141D6 49.5%, #3F68FD 100%);
+  @apply bg-clip-text text-transparent
+}
+
+
+.checkbox-custom {
+  @apply block border-brand-blue relative appearance-none min-w-5 size-5 border rounded bg-transparent
+}
+
+.checkbox-custom:checked {
+  @apply bg-brand-blue/20 border-transparent
+}
+
+.checkbox-custom:checked::after {
+  content: '';
+  transform: translate(-50%, -50%);
+  /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.285 6.708l-11.145 11.145-5.145-5.145 1.415-1.414 3.729 3.728 9.732-9.732z"/></svg>'); */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 10 7" fill="none"><path d="M9 1L3.66667 6L1 3.27273" stroke="%238F45F4"/></svg>');
+  @apply bg-contain bg-no-repeat absolute left-1/2 top-1/2 w-2.5 h-1.5 text-brand-blue;
+}

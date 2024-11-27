@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Gagarin FT</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white w-full sticky top-0 z-50 py-3 md:py-5">
+    <nav class="max-w-base flex items-center justify-between gap-8 mx-auto px-15 md:px-5">
+      <!-- Mobile Menu -->
+      <button
+        class="size-10 bg-brand-blue/10 rounded-full lg:hidden flex items-center justify-center transition duration-300 hover:opacity-70">
+        <svg width="16" height="12" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1H17" stroke="#2A72FE" stroke-width="1.3" stroke-linecap="round" />
+          <path d="M1 7H17" stroke="#2A72FE" stroke-width="1.3" stroke-linecap="round" />
+          <path d="M1 13H17" stroke="#2A72FE" stroke-width="1.3" stroke-linecap="round" />
+        </svg>
+      </button>
+      <!-- Logo -->
+      <a class="shrink-0" href="#">
+        <img class="h-8 md:h-38" src="./assets/icon/logo.svg" alt="logo">
+      </a>
+      <!-- Links -->
+      <div class="w-full max-w-[31.875rem] hidden lg:flex items-center justify-between gap-5">
+        <!-- Drobdown -->
+        <div>
+          <button class="transition duration-300 hover:opacity-70 flex items-center gap-2">
+            <span>Сервисы</span>
+            <svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 1L5.5 4L1 1" stroke="#A1A1A1" stroke-width="1.3" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <a class="transition duration-300 hover:opacity-70" href="#">Служба поддержки</a>
+        <button
+          class="bg-brand-blue/10 text-brand-blue flex items-center gap-1.5 transition duration-300 hover:opacity-70 rounded-full px-6 py-2.5">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.3999 11.6C2.3999 9.7 4.2999 8.5 6.4999 8.5C8.6999 8.5 10.6999 9.7 11.5999 11.6" stroke="#8F45F4"
+              stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M6.5 6.4C7.88071 6.4 9 5.28071 9 3.9C9 2.51929 7.88071 1.4 6.5 1.4C5.11929 1.4 4 2.51929 4 3.9C4 5.28071 5.11929 6.4 6.5 6.4Z"
+              stroke="#8F45F4" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span>Кабинет</span>
+        </button>
+      </div>
+      <button
+        class="size-10 bg-brand-blue/10 rounded-full lg:hidden flex items-center justify-center transition duration-300 hover:opacity-70">
+        <svg width="11" height="11" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.3999 11.6C2.3999 9.7 4.2999 8.5 6.4999 8.5C8.6999 8.5 10.6999 9.7 11.5999 11.6" stroke="#8F45F4"
+            stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M6.5 6.4C7.88071 6.4 9 5.28071 9 3.9C9 2.51929 7.88071 1.4 6.5 1.4C5.11929 1.4 4 2.51929 4 3.9C4 5.28071 5.11929 6.4 6.5 6.4Z"
+            stroke="#8F45F4" stroke-width="1.3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-no-repeat bg-cover" style="background-image: url('./assets/img/hero-bg.png');">
+      <div class="max-w-base-2 mx-auto px-15 md:px-5">
+        <!-- Top -->
+        <div class="flex items-center justify-center gap-3.5 pb-11 lg:pb-[3.875rem] py-[3.875rem]">
+          <button
+            class="bg-black/[7%] rounded-full text-black/50 text-sm/[1.1156rem] md:text-base/5 transition duration-300 hover:bg-black/20 hover:shadow px-[1.125rem] py-2">Yurta</button>
+          <button
+            class="bg-brand-blue rounded-full text-white text-sm/[1.1156rem] md:text-base/5 transition duration-300 hover:opacity-70 hover:shadow px-[1.125rem] py-2">Steam</button>
+        </div>
+        <!-- Bottom -->
+        <div class="flex justify-center lg:justify-between gap-8 pb-11 md:pb-[3.875rem] lg:pb-[8.375rem]">
+          <!-- Left -->
+          <div class="w-full max-w-[34.6875rem]">
+            <h1 class="text-center lg:text-left text-gradient font-semibold text-40 lg:text-50">
+              Моментальная оплата <br>
+              <span class="font-medium text-black text-30 lg:text-40">вашего заказа</span>
+            </h1>
+            <p class="text-center lg:text-left text-black/60 text-18 mt-15">
+              Используйте легкий сервис оплаты заказов из своей страны. Выгодно и безопасно — всё как раньше.
+            </p>
+            <form action="" class="mt-10 space-y-6">
+              <div class="bg-white rounded-teen flex items-center gap-3.5 py-5 px-7">
+                <svg class="shrink-0" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.34694 7.85714C9.54082 7.85714 11.2755 6.07143 11.2755 3.92857C11.2755 1.73469 9.4898 0 7.34694 0C5.20408 0 3.41837 1.73469 3.41837 3.87755C3.41837 6.07143 5.20408 7.85714 7.34694 7.85714ZM14.2347 11.4796C12.7551 10.051 9.28571 9.7449 7.34694 9.7449C5.40816 9.7449 1.93878 10.051 0.510204 11.4796C0.0510204 11.8878 0 12.602 0 12.602C0 13.9286 0.918367 15 2.04082 15H12.6531C13.7755 15 14.6939 13.9286 14.6939 12.602C14.7449 12.602 14.6939 11.8878 14.2347 11.4796Z"
+                    fill="black" fill-opacity="0.2" />
+                </svg>
+                <input class="w-full outline-none text-base/5 placeholder:text-base/5 placeholder:text-black/70"
+                  type="number" name="number-client" id="number-client" placeholder="Номер клиента">
+              </div>
+              <div class="bg-white rounded-teen flex items-center gap-3.5 py-5 px-7">
+                <svg class="shrink-0" width="16" height="18" viewBox="0 0 16 18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 5.28144V5.49701V5.71257V12.3952C16 13.1497 15.5733 13.9042 15.04 14.3353L14.9333 14.4431L9.17333 17.7844L9.06667 17.8922L8.96 18V9.48503L16 5.28144ZM0 5.28144L7.04 9.48503V17.7844C6.93333 17.7844 6.93333 17.6766 6.82667 17.6766L1.06667 14.3353C0.426667 13.9042 0 13.1497 0 12.2874V5.60479C0 5.49701 0 5.38922 0 5.28144ZM9.17333 0.323353L14.9333 3.66467L15.04 3.77245L8 7.86826L0.96 3.77245L1.06667 3.66467L6.82667 0.323353C7.57333 -0.107784 8.42667 -0.107784 9.17333 0.323353Z"
+                    fill="black" fill-opacity="0.2" />
+                </svg>
+                <input class="w-full outline-none text-base/5 placeholder:text-base/5  placeholder:text-black/70"
+                  type="number" name="number-client" id="number-client" placeholder="Номер заказа">
+              </div>
+              <div class="bg-white rounded-teen flex items-center gap-3.5 py-5 px-7">
+                <svg class="shrink-0" width="15" height="16" viewBox="0 0 15 16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 11.0199V12.1854C15 12.8212 14.6831 13.457 14.2606 13.8808C13.838 14.3046 13.2042 14.7285 12.5704 15.0464C11.1972 15.6821 9.40141 16 7.5 16C5.59859 16 3.80282 15.6821 2.42958 15.0464C1.79577 14.7285 1.16197 14.4106 0.739437 13.8808C0.316901 13.457 0 12.9272 0 12.2914V12.0795V10.9139C0.422535 11.1258 0.84507 11.3377 1.26761 11.4437C2.95775 12.0795 5.17606 12.3974 7.5 12.3974C9.82394 12.3974 12.0423 12.0795 13.7324 11.4437C14.0493 11.3377 14.3662 11.2318 14.6831 11.0199H15ZM0 6.35762C0.422535 6.56954 0.84507 6.78146 1.26761 6.88742C2.95775 7.52318 5.17606 7.84106 7.5 7.84106C9.82394 7.84106 12.0423 7.52318 13.7324 6.88742C14.1549 6.6755 14.5775 6.56954 15 6.35762V9.00662C14.4718 9.43046 13.838 9.74834 13.2042 10.0662C11.7254 10.596 9.71831 10.9139 7.5 10.9139C5.28169 10.9139 3.27465 10.596 1.79577 10.0662C1.16197 9.74834 0.528169 9.43046 0 9.00662V6.35762ZM7.5 0C9.40141 0 11.1972 0.317881 12.5704 0.953642C13.2042 1.27152 13.838 1.5894 14.2606 2.11921C14.6831 2.54305 15 3.07285 15 3.70861V3.92053V4.55629C14.4718 4.98013 13.838 5.29801 13.2042 5.61589C11.7254 6.1457 9.71831 6.46358 7.5 6.46358C5.28169 6.46358 3.27465 6.1457 1.79577 5.61589C1.26761 5.19205 0.739437 4.87417 0.211268 4.55629L0 4.34437V3.81457C0 3.17881 0.316901 2.54305 0.739437 2.11921C1.16197 1.69536 1.79577 1.27152 2.42958 0.953642C3.80282 0.317881 5.59859 0 7.5 0Z"
+                    fill="black" fill-opacity="0.2" />
+                </svg>
+                <input class="w-full outline-none text-base/5 placeholder:text-base/5 placeholder:text-black/70"
+                  type="text" name="number-client" id="number-client" placeholder="Сумма оплаты в тенге">
+              </div>
+              <div class="flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-5">
+                <div class="cursor-pointer flex space-x-3">
+                  <input type="checkbox" id="hero-checkbox" class="cursor-pointer checkbox-custom text-sm/[1.225rem]"
+                    checked>
+                  <label for="hero-checkbox" class="cursor-pointer custom-label text-black/50 text-sm/[1.225rem]">
+                    Нажимая кнопку «Оплатить», вы соглашаетесь <br>
+                    с
+                    <span class="text-brand-blue/50">политикой конфиденциальности</span>
+                  </label>
+                </div>
+                <button
+                  class="bg-brand-blue rounded-teen text-white text-sm/[1.1156rem] md:text-base/5 transition duration-300 hover:opacity-70 hover:shadow px-9 py-5">Оплатить</button>
+              </div>
+            </form>
+          </div>
+          <!-- Right -->
+          <div class="w-full max-w-[31.25rem] xl:max-w-[34.6875rem] relative hidden lg:block">
+            <div class="flex gap-30">
+              <div class="overflow-hidden w-360 h-[21.75rem] rounden-custom-1">
+                <img class="size-full object-cover" src="./assets/img/hero-image__1.png" alt="hero-image__1">
+              </div>
+              <div>
+                <div class="overflow-hidden object-cover bg-[#DABEF0] w-165 h-159 rounden-custom">
+                  <img class="w-[13.1875rem] h-[8.5625rem] ml-3 mt-3" src="./assets/img/hero-image__2.png"
+                    alt="hero-image__2">
+                </div>
+                <div class="overflow-hidden w-165 h-159 rounded-teen mt-30">
+                  <img class="size-full object-cover" src="./assets/img/hero-image__3.png" alt="hero-image__3">
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-30 mt-30">
+              <div class="overflow-hidden object-cover bg-[#DABEF0] w-165 h-159 rounden-custom-2">
+                <img class="size-full object-cover" src="./assets/img/hero-image__5.png" alt="hero-image__5">
+              </div>
+              <div class="overflow-hidden w-360 h-159 bg-[#C3E3BA] rounden-custom-3">
+                <img class="w-[19.8125rem] h-[13.5rem] object-cover mt-2 ml-3" src="./assets/img/hero-image__4.png"
+                  alt="hero-image__3">
+              </div>
+            </div>
+            <!-- Flower -->
+            <div class="absolute top-0 left-0 bg-[#B6E4B4] size-20 rounded-full flex items-center justify-center">
+              <img class="size-10" src="./assets/icon/flower-1.svg" alt="flower-1">
+            </div>
+            <div
+              class="absolute top-1/3 right-4 xl:right-0 xl:translate-x-1/2 -translate-y-1/2 bg-[#B6E4B4] size-[4.375rem] rounded-full flex items-center justify-center mt-2">
+              <img class="w-9 h-8" src="./assets/icon/flower-2.svg" alt="flower-2">
+            </div>
+            <div
+              class="absolute bottom-0 left-1/3 xl:translate-y-1/2 -translate-x-1/2 bg-[#BDDAEB] size-[3.625rem] rounded-full flex items-center justify-center ml-2">
+              <img class="shrink-0" src="./assets/icon/flower-3.svg" alt="flower-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Everything is very simple -->
+    <section class="bg-white drob-shadow-2 py-38 md:py-[3.625rem] lg:py-[4.375rem]">
+      <div class="max-w-base-3 flex flex-col md:flex-row items-center justify-between gap-6 mx-auto px-15 md:px-5">
+        <h2 class="font-medium text-center md:text-left text-black text-30 lg:text-40">
+          Всё <br class="hidden md:block">
+          очень <br class="hidden md:block">
+          просто
+        </h2>
+        <div class="w-full max-w-[54.375rem] grid md:grid-cols-2 gap-5 lg:gap-30">
+          <!-- 1 -->
+          <div class="bg-[#F6F7FB] rounded-[20px] p-5 lg:px-[3.125rem] lg:py-8">
+            <h3 class="font-semibold text-30 lg:text-40 text-gradient w-max">1 шаг</h3>
+            <p class="text-black/60 text-base/[1.375rem] lg:text-lg/[1.5625rem] mt-2">
+              Введите ваш номер клиента, номер заказа и сумму. Нажмите «Оплатить».
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="bg-[#F6F7FB] rounded-[20px] p-5 lg:px-[3.125rem] lg:py-8">
+            <h3 class="font-semibold text-30 lg:text-40 text-gradient w-max">2 шаг</h3>
+            <p class="text-black/60 text-base/[1.375rem] lg:text-lg/[1.5625rem] mt-2">
+              Оплатите заказ картой РФ в рублях или наведением на QR код.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product -->
+    <section class="bg-white/80 py-38 md:py-[3.625rem] lg:py-[4.375rem]">
+      <div class="max-w-base-3 grid grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-5 lg:gap-[3.75rem] mx-auto px-15 md:px-5">
+        <!-- Product 1 -->
+        <a href="#"
+          class="bg-white overflow-hidden rounded-[1.25rem] group drob-shadow transition duration-300 hover:shadow-md">
+          <div class="mx-auto responsive-image rounded-b-none rounded-t-[1.25rem] overflow-hidden">
+            <img class="transition duration-300 group-hover:scale-105 size-full object-cover"
+              src="./assets/img/product-1.jpeg" alt="product-1">
+          </div>
+          <div class="flex flex-col justify-between px-15 py-15 md:px-5 md:py-4 lg:px-30 lg:py-7">
+            <div>
+              <h5 class="text-xs md:text-sm lg:text-17 pb-1">
+                Artistry Skin Nutrition™
+                Набор «Матирование и баланс»
+              </h5>
+              <span class="text-black/50 text-[11px] md:text-xs lg:text-15">Артикул: 124710</span>
+            </div>
+            <!-- Price -->
+            <p class="font-medium md:text-18 lg:text-22 mt-9">
+              <span class="text-[#C2C2C2]">₸</span>
+              36 747,00
+            </p>
+          </div>
+        </a>
+        <!-- Product 2 -->
+        <a href="#"
+          class="bg-white overflow-hidden rounded-[1.25rem] group drob-shadow transition duration-300 hover:shadow-md">
+          <div class="mx-auto responsive-image rounded-b-none rounded-t-[1.25rem] overflow-hidden">
+            <img class="transition duration-300 group-hover:scale-105 size-full object-cover"
+              src="./assets/img/product-2.jpeg" alt="product-2">
+          </div>
+          <div class="flex flex-col justify-between px-15 py-15 md:px-5 md:py-4 lg:px-30 lg:py-7">
+            <div>
+              <h5 class="text-xs md:text-sm lg:text-17 pb-1">
+                Artistry Skin Nutrition™
+                Набор Сыворотка с витамином С и гиалуроновой кислотой
+              </h5>
+              <span class="text-black/50 text-[11px] md:text-xs lg:text-15">Артикул: 316161</span>
+            </div>
+            <!-- Price -->
+            <p class="font-medium md:text-18 lg:text-22 mt-9">
+              <span class="text-[#C2C2C2]">₸</span>
+              54 144,00
+            </p>
+          </div>
+        </a>
+        <!-- Product 3 -->
+        <a href="#"
+          class="bg-white overflow-hidden rounded-[1.25rem] group drob-shadow transition duration-300 hover:shadow-md">
+          <div class="mx-auto responsive-image rounded-b-none rounded-t-[1.25rem] overflow-hidden">
+            <img class="transition duration-300 group-hover:scale-105 size-full object-cover"
+              src="./assets/img/product-3.png" alt="product-3">
+          </div>
+          <div class="flex flex-col justify-between px-15 py-15 md:px-5 md:py-4 lg:px-30 lg:py-7">
+            <div>
+              <h5 class="text-xs md:text-sm lg:text-17 pb-1">
+                Truvivity™ Набор TRUVIVITY by NUTRILITE™
+              </h5>
+              <span class="text-black/50 text-[11px] md:text-xs lg:text-15">Артикул: 302211</span>
+            </div>
+            <!-- Price -->
+            <p class="font-medium md:text-18 lg:text-22 mt-9">
+              <span class="text-[#C2C2C2]">₸</span>
+              58 178,00
+            </p>
+          </div>
+        </a>
+        <!-- Product 4 -->
+        <a href="#"
+          class="bg-white overflow-hidden rounded-[1.25rem] group drob-shadow transition duration-300 hover:shadow-md">
+          <div class="mx-auto responsive-image rounded-b-none rounded-t-[1.25rem] overflow-hidden">
+            <img class="transition duration-300 group-hover:scale-105 size-full object-cover"
+              src="./assets/img/product-4.png" alt="product-4">
+          </div>
+          <div class="flex flex-col justify-between px-15 py-15 md:px-5 md:py-4 lg:px-30 lg:py-7">
+            <div>
+              <h5 class="text-xs md:text-sm lg:text-17 pb-1">
+                Кухонная посуда iCook™
+                Набор 2+1 Доска для нарезки
+                и сервировки продуктов
+              </h5>
+              <span class="text-black/50 text-[11px] md:text-xs lg:text-15">Артикул: 324353</span>
+            </div>
+            <!-- Price -->
+            <p class="font-medium md:text-18 lg:text-22 mt-9">
+              <span class="text-[#C2C2C2]">₸</span>
+              28 870,00
+            </p>
+          </div>
+        </a>
+        <!-- Product 5 -->
+        <a href="#"
+          class="bg-white overflow-hidden rounded-[1.25rem] group drob-shadow transition duration-300 hover:shadow-md">
+          <div class="mx-auto responsive-image rounded-b-none rounded-t-[1.25rem] overflow-hidden">
+            <img class="transition duration-300 group-hover:scale-105 size-full object-cover"
+              src="./assets/img/product-5.png" alt="product-5">
+          </div>
+          <div class="flex flex-col justify-between px-15 py-15 md:px-5 md:py-4 lg:px-30 lg:py-7">
+            <div>
+              <h5 class="text-xs md:text-sm lg:text-17 pb-1">
+                Artistry Skin Nutrition™
+                Набор ARTISTRY SKIN NUTRITION™ Cыворотка с витамином С
+              </h5>
+              <span class="text-black/50 text-[11px] md:text-xs lg:text-15">Артикул: 315362</span>
+            </div>
+            <!-- Price -->
+            <p class="font-medium md:text-18 lg:text-22 mt-9">
+              <span class="text-[#C2C2C2]">₸</span>
+              68 395,00
+            </p>
+          </div>
+        </a>
+        <!-- Product 6 -->
+        <a href="#"
+          class="bg-white overflow-hidden rounded-[1.25rem] group drob-shadow transition duration-300 hover:shadow-md">
+          <div class="mx-auto responsive-image rounded-b-none rounded-t-[1.25rem] overflow-hidden">
+            <img class="transition duration-300 group-hover:scale-105 size-full object-cover"
+              src="./assets/img/product-6.png" alt="product-6">
+          </div>
+          <div class="flex flex-col justify-between px-15 py-15 md:px-5 md:py-4 lg:px-30 lg:py-7">
+            <div>
+              <h5 class="text-xs md:text-sm lg:text-17 pb-1">
+                Artistry Signature Select™
+                Набор «Для идеального свидания»
+              </h5>
+              <span class="text-black/50 text-[11px] md:text-xs lg:text-15">Артикул: 303622</span>
+            </div>
+            <!-- Price -->
+            <p class="font-medium md:text-18 lg:text-22 mt-9">
+              <span class="text-[#C2C2C2]">₸</span>
+              52 893,00
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-white/80 py-[1.375rem] lg:pt-8 lg:pb-7">
+    <div class="max-w-base-3 flex flex-col lg:flex-row items-center justify-between gap-x-6 gap-y-2 mx-auto px-15 md:px-5">
+      <p class="text-black/50 text-center lg:text-left text-sm/[1.575rem]">
+        ООО «ЛАВУРО ИНЖИНИРИНГ» <br class="hidden lg:block">
+        ОГРН 1217700340681, ИНН 9725055420
+      </p>
+      <div class="lg:max-w-3xl flex flex-col md:flex-row items-center justify-between gap-x-30 lg:gap-3 xl:gap-x-8 gap-y-1">
+        <a href="#" class="text-sm/[1.4rem] transition duration-300 hover:opacity-70">Сервисы</a>
+        <a href="#" class="text-sm/[1.4rem] transition duration-300 hover:opacity-70">Пользовательское соглашение</a>
+        <a href="#" class="text-sm/[1.4rem] transition duration-300 hover:opacity-70">Политика конфиденциальности</a>
+        <a href="#" class="text-sm/[1.4rem] transition duration-300 hover:opacity-70">Служба поддержки</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+</body>
+
+</html>
