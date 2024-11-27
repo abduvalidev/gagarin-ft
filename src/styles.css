@@ -14,13 +14,14 @@
   }
 }
 
-
 .responsive-image {
   @apply  max-w-[21.875rem] w-full aspect-square
 }
+
 .drob-shadow {
   box-shadow: 0px 2px 5px 0px #79799212;
 }
+
 .drob-shadow-2 {
   box-shadow: 0px 40px 80px 0px #79799212;
 }
